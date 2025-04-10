@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Food Recipes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-gray-600">
+
+  <div class="max-w-7xl mx-auto">
+    
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between p-4 border-b border-gray-100">
+      <h1 class="font-bold uppercase text-xl">
+        <a href="/">Food Recipes</a>
+      </h1>
+      <ul class="flex items-center space-x-6 text-sm">
+        <li class="font-bold text-gray-700"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="px-6 py-10">
+
+      <div class="flex justify-end space-x-4 text-sm">
+        <a href="#" class="text-primary hover:underline">Log in</a>
+        <a href="#" class="text-primary hover:underline">Sign up</a>
+      </div>
+
+      <header class="text-center my-10">
+        <h2 class="text-5xl font-bold text-gray-700">Delicious Recipes</h2>
+        <h3 class="text-2xl font-medium text-gray-500 mt-2">Cook with Passion</h3>
+      </header>
+
+      <!-- Latest Recipes -->
+      <section>
+        <h4 class="font-bold text-lg border-b pb-2 border-gray-200 mb-6">Latest Recipes</h4>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Card -->
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="img/stew.jpg" alt="Stew" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h5 class="font-semibold mb-2">5 Bean Chili Stew</h5>
+              <p class="text-sm text-gray-500">Recipe by Mario</p>
+            </div>
+          </div>
+
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="img/noodles.jpg" alt="Noodles" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h5 class="font-semibold mb-2">Spicy Garlic Noodles</h5>
+              <p class="text-sm text-gray-500">Recipe by Anna</p>
+            </div>
+          </div>
+
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="img/curry.jpg" alt="Curry" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h5 class="font-semibold mb-2">Creamy Chicken Curry</h5>
+              <p class="text-sm text-gray-500">Recipe by John</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Load More -->
+      <div class="flex justify-center mt-12">
+        <button class="bg-gray-200 text-gray-700 py-2 px-6 rounded hover:bg-gray-300">
+          Load More
+        </button>
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html>
